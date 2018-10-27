@@ -30,7 +30,7 @@ namespace Gerenciamento
                 this.Hide();
 
                 //Faz dispose automatico do metodo ShowDialog
-                using (var T = new TelaGeral())
+                using (var T = new FormTelaGeral())
                 {
                     T.ShowDialog();
                 }

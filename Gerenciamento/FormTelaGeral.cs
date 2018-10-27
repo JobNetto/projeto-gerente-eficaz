@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gerenciamento
 {
-    public partial class TelaGeral : Form
+    public partial class FormTelaGeral : Form
     {
-        public TelaGeral()
+        public FormTelaGeral()
         {
             InitializeComponent();
         }
