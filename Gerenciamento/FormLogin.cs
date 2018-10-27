@@ -24,8 +24,24 @@ namespace Gerenciamento
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TelaGeral T = new TelaGeral();
-            T.Show();
+            if(textBox1.Text == "admin" && textBox2.Text == "")
+            {
+                // Esconde o form login apos clicar em entrar
+                this.Hide();
+
+                //Faz dispose automatico do metodo ShowDialog
+                using (var T = new TelaGeral())
+                {
+                    T.ShowDialog();
+                }
+                //Fecha o form
+                this.Close();
+            }else
+            {
+                MessageBox.Show("Usuário ou senha inválidos!","Alerta",MessageBoxButtons.OK,MessageBoxIcon.Error,MessageBoxDefaultButton.Button2,MessageBoxOptions.DefaultDesktopOnly);
+            }
+         
+           
         }
     }
 }
