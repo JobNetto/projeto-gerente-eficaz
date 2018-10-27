@@ -19,7 +19,7 @@ namespace Gerenciamento
 
         private void motoristaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCadastro FC = new FormCadastro();
+            FormCadastroMotorista FC = new FormCadastroMotorista();
             FC.Show();
         }
     }
