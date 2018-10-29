@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Gerenciamento
 {
-    public partial class FormTeste : Form
+    public partial class FormCadastroCaminhao : Form
     {
-        public FormTeste()
+        public FormCadastroCaminhao()
         {
             InitializeComponent();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
