@@ -38,7 +38,7 @@ namespace Gerenciamento
                 this.Close();
             }else
             {
-                MessageBox.Show("Usuário ou senha inválidos!","Alerta",MessageBoxButtons.OK,MessageBoxIcon.Error,MessageBoxDefaultButton.Button2,MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Usuário ou senha inválidos!","Alerta",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
          
            
