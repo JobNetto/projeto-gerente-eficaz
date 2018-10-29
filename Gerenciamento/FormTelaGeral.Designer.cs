@@ -69,21 +69,28 @@
             // 
             this.viajemToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viajemToolStripMenuItem.Image")));
             this.viajemToolStripMenuItem.Name = "viajemToolStripMenuItem";
-            this.viajemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viajemToolStripMenuItem.ShortcutKeyDisplayString = "";
+            this.viajemToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F1)));
+            this.viajemToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.viajemToolStripMenuItem.Text = "Viajem";
+            this.viajemToolStripMenuItem.Click += new System.EventHandler(this.viajemToolStripMenuItem_Click);
             // 
             // caminhãoToolStripMenuItem
             // 
             this.caminhãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("caminhãoToolStripMenuItem.Image")));
             this.caminhãoToolStripMenuItem.Name = "caminhãoToolStripMenuItem";
-            this.caminhãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.caminhãoToolStripMenuItem.ShortcutKeyDisplayString = "";
+            this.caminhãoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F2)));
+            this.caminhãoToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.caminhãoToolStripMenuItem.Text = "Caminhão";
+            this.caminhãoToolStripMenuItem.Click += new System.EventHandler(this.caminhãoToolStripMenuItem_Click);
             // 
             // motoristaToolStripMenuItem
             // 
             this.motoristaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("motoristaToolStripMenuItem.Image")));
             this.motoristaToolStripMenuItem.Name = "motoristaToolStripMenuItem";
-            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.motoristaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F3)));
+            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.motoristaToolStripMenuItem.Text = "Motorista";
             this.motoristaToolStripMenuItem.Click += new System.EventHandler(this.motoristaToolStripMenuItem_Click);
             // 
@@ -102,21 +109,21 @@
             // 
             this.viajemToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("viajemToolStripMenuItem1.Image")));
             this.viajemToolStripMenuItem1.Name = "viajemToolStripMenuItem1";
-            this.viajemToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.viajemToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.viajemToolStripMenuItem1.Text = "Viajem";
             // 
             // caminhãoToolStripMenuItem1
             // 
             this.caminhãoToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("caminhãoToolStripMenuItem1.Image")));
             this.caminhãoToolStripMenuItem1.Name = "caminhãoToolStripMenuItem1";
-            this.caminhãoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.caminhãoToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.caminhãoToolStripMenuItem1.Text = "Caminhão";
             // 
             // motoristaToolStripMenuItem1
             // 
             this.motoristaToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("motoristaToolStripMenuItem1.Image")));
             this.motoristaToolStripMenuItem1.Name = "motoristaToolStripMenuItem1";
-            this.motoristaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.motoristaToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.motoristaToolStripMenuItem1.Text = "Motorista";
             // 
             // relarorioToolStripMenuItem

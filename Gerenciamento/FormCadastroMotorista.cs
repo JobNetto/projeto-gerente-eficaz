@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Gerenciamento
 {
-    public partial class FormCadastroMotorista : Form
+    public partial class FormCadastroMotorista : FormBase
     {
         public FormCadastroMotorista()
         {
@@ -21,7 +21,6 @@ namespace Gerenciamento
         {
 
         }
-
        
     }
 }

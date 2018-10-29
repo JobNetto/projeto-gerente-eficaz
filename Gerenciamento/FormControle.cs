@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Gerenciamento
 {
-    public partial class FormControle : Form
+    public partial class FormControle : FormBase
     {
         public FormControle()
         {

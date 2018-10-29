@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace Gerenciamento
 {
-    public partial class FormCadastroCaminhao : FormBase
+    public partial class FormBase : Form
     {
-        public FormCadastroCaminhao()
+        public FormBase()
         {
             InitializeComponent();
+        }
+
+        private void FormBase_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Escape)
+            {
+                Close();
+            }
         }
     }
 }
