@@ -102,21 +102,21 @@
             // 
             this.viajemToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("viajemToolStripMenuItem1.Image")));
             this.viajemToolStripMenuItem1.Name = "viajemToolStripMenuItem1";
-            this.viajemToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.viajemToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.viajemToolStripMenuItem1.Text = "Viajem";
             // 
             // caminhãoToolStripMenuItem1
             // 
             this.caminhãoToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("caminhãoToolStripMenuItem1.Image")));
             this.caminhãoToolStripMenuItem1.Name = "caminhãoToolStripMenuItem1";
-            this.caminhãoToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.caminhãoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.caminhãoToolStripMenuItem1.Text = "Caminhão";
             // 
             // motoristaToolStripMenuItem1
             // 
             this.motoristaToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("motoristaToolStripMenuItem1.Image")));
             this.motoristaToolStripMenuItem1.Name = "motoristaToolStripMenuItem1";
-            this.motoristaToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.motoristaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.motoristaToolStripMenuItem1.Text = "Motorista";
             // 
             // relarorioToolStripMenuItem
@@ -126,7 +126,7 @@
             this.relarorioToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.relarorioToolStripMenuItem.Text = "Relarorio";
             // 
-            // TelaGeral
+            // FormTelaGeral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,7 +134,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "TelaGeral";
+            this.Name = "FormTelaGeral";
             this.Text = "Gerente Eficaz";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);

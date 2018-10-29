@@ -361,7 +361,7 @@
             // btGravar
             // 
             this.btGravar.BackColor = System.Drawing.Color.Gray;
-            this.btGravar.Location = new System.Drawing.Point(12, 381);
+            this.btGravar.Location = new System.Drawing.Point(12, 376);
             this.btGravar.Name = "btGravar";
             this.btGravar.Size = new System.Drawing.Size(80, 30);
             this.btGravar.TabIndex = 14;
@@ -370,14 +370,14 @@
             // 
             // btCancelar
             // 
-            this.btCancelar.Location = new System.Drawing.Point(547, 381);
+            this.btCancelar.Location = new System.Drawing.Point(542, 376);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(80, 30);
             this.btCancelar.TabIndex = 15;
             this.btCancelar.Text = "&Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
             // 
-            // FormCadastro
+            // FormCadastroMotorista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -392,7 +392,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormCadastro";
+            this.Name = "FormCadastroMotorista";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Motorista";
             this.Load += new System.EventHandler(this.FormCadastro_Load);

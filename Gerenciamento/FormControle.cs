@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gerenciamento
 {
-    public partial class FormCadastroCaminhao : Form
+    public partial class FormControle : Form
     {
-        public FormCadastroCaminhao()
+        public FormControle()
         {
             InitializeComponent();
         }
