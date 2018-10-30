@@ -35,13 +35,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -56,16 +58,14 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.btCancelar = new System.Windows.Forms.Button();
             this.btGravar = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -74,7 +74,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 43);
+            this.label1.Location = new System.Drawing.Point(23, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 0;
@@ -125,20 +125,6 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Cor";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(70, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 20);
-            this.textBox1.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(371, 28);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(78, 20);
-            this.textBox2.TabIndex = 7;
-            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(54, 28);
@@ -171,6 +157,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.maskedTextBox2);
+            this.groupBox1.Controls.Add(this.maskedTextBox1);
             this.groupBox1.Controls.Add(this.textBox11);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.textBox12);
@@ -182,14 +170,12 @@
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Location = new System.Drawing.Point(12, 82);
@@ -198,6 +184,38 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalhes do Veículo";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(525, 134);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(78, 20);
+            this.textBox11.TabIndex = 27;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(478, 137);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(23, 13);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "KM";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(525, 98);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(78, 20);
+            this.textBox12.TabIndex = 25;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(455, 104);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(64, 13);
+            this.label13.TabIndex = 24;
+            this.label13.Text = "Capacidade";
             // 
             // textBox8
             // 
@@ -335,13 +353,6 @@
             this.textBox10.Size = new System.Drawing.Size(232, 20);
             this.textBox10.TabIndex = 17;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(525, 28);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(78, 20);
-            this.textBox3.TabIndex = 16;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -386,37 +397,42 @@
             this.btGravar.Text = "&Gravar";
             this.btGravar.UseVisualStyleBackColor = false;
             // 
-            // textBox11
+            // comboBox1
             // 
-            this.textBox11.Location = new System.Drawing.Point(525, 134);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(78, 20);
-            this.textBox11.TabIndex = 27;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Mercedes-Benz",
+            "MAN (VW)",
+            "Ford Caminhões",
+            "Volvo",
+            "Scania",
+            "Iveco",
+            "DAF",
+            "Agrale",
+            "International",
+            "Hyundai"});
+            this.comboBox1.Location = new System.Drawing.Point(66, 40);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(211, 21);
+            this.comboBox1.TabIndex = 19;
             // 
-            // label12
+            // maskedTextBox1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(478, 137);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(23, 13);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "KM";
+            this.maskedTextBox1.Location = new System.Drawing.Point(371, 28);
+            this.maskedTextBox1.Mask = "00/00/0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(78, 20);
+            this.maskedTextBox1.TabIndex = 20;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
-            // textBox12
+            // maskedTextBox2
             // 
-            this.textBox12.Location = new System.Drawing.Point(525, 98);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(78, 20);
-            this.textBox12.TabIndex = 25;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(455, 104);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 13);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "Capacidade";
+            this.maskedTextBox2.Location = new System.Drawing.Point(525, 28);
+            this.maskedTextBox2.Mask = "00/00/0000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(78, 20);
+            this.maskedTextBox2.TabIndex = 28;
+            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
             // 
             // FormCadastroCaminhao
             // 
@@ -424,6 +440,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(634, 421);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btGravar);
             this.Controls.Add(this.textBox9);
@@ -431,7 +448,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadastroCaminhao";
@@ -456,8 +472,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox5;
@@ -466,7 +480,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -487,5 +500,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
