@@ -16,7 +16,7 @@ namespace Gerenciamento
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCadastroMotorista());
+            Application.Run(new FormLogin());
         }
     }
 }

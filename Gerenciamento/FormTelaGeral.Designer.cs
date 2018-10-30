@@ -71,7 +71,7 @@
             this.viajemToolStripMenuItem.Name = "viajemToolStripMenuItem";
             this.viajemToolStripMenuItem.ShortcutKeyDisplayString = "";
             this.viajemToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F1)));
-            this.viajemToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.viajemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viajemToolStripMenuItem.Text = "Viajem";
             this.viajemToolStripMenuItem.Click += new System.EventHandler(this.viajemToolStripMenuItem_Click);
             // 
@@ -81,7 +81,7 @@
             this.caminhãoToolStripMenuItem.Name = "caminhãoToolStripMenuItem";
             this.caminhãoToolStripMenuItem.ShortcutKeyDisplayString = "";
             this.caminhãoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F2)));
-            this.caminhãoToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.caminhãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.caminhãoToolStripMenuItem.Text = "Caminhão";
             this.caminhãoToolStripMenuItem.Click += new System.EventHandler(this.caminhãoToolStripMenuItem_Click);
             // 
@@ -90,7 +90,7 @@
             this.motoristaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("motoristaToolStripMenuItem.Image")));
             this.motoristaToolStripMenuItem.Name = "motoristaToolStripMenuItem";
             this.motoristaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F3)));
-            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.motoristaToolStripMenuItem.Text = "Motorista";
             this.motoristaToolStripMenuItem.Click += new System.EventHandler(this.motoristaToolStripMenuItem_Click);
             // 

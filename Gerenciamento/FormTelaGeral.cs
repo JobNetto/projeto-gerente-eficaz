@@ -19,20 +19,21 @@ namespace Gerenciamento
 
         private void motoristaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCadastroMotorista FC = new FormCadastroMotorista();
-            FC.Show();
+            var frm = new FormCadastroMotorista();
+            frm.ShowDialog();
         }
 
-        private void viajemToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void caminhãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frm = new FormCadastroCaminhao();
             frm.ShowDialog();
-            frm.Dispose();
+        }
+
+        private void viajemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new FormControle();
+            frm.ShowDialog();
         }
     }
 }

@@ -50,7 +50,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(387, 95);
+            this.dateTimePicker1.Location = new System.Drawing.Point(377, 95);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 0;
@@ -58,7 +58,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(282, 101);
+            this.label1.Location = new System.Drawing.Point(272, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 13);
             this.label1.TabIndex = 1;
@@ -67,7 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(271, 327);
+            this.label2.Location = new System.Drawing.Point(261, 327);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 13);
             this.label2.TabIndex = 3;
@@ -75,7 +75,7 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(387, 320);
+            this.dateTimePicker2.Location = new System.Drawing.Point(377, 320);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 2;
@@ -94,14 +94,14 @@
             "Agrale",
             "International",
             "Hyundai"});
-            this.comboBox1.Location = new System.Drawing.Point(130, 51);
+            this.comboBox1.Location = new System.Drawing.Point(120, 51);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(211, 21);
             this.comboBox1.TabIndex = 23;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(387, 51);
+            this.textBox6.Location = new System.Drawing.Point(377, 51);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(111, 20);
             this.textBox6.TabIndex = 22;
@@ -109,7 +109,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(347, 55);
+            this.label7.Location = new System.Drawing.Point(337, 55);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 13);
             this.label7.TabIndex = 21;
@@ -118,7 +118,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(70, 55);
+            this.label3.Location = new System.Drawing.Point(60, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 20;
@@ -126,7 +126,7 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(158, 320);
+            this.textBox11.Location = new System.Drawing.Point(148, 320);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(78, 20);
             this.textBox11.TabIndex = 31;
@@ -134,7 +134,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(105, 323);
+            this.label12.Location = new System.Drawing.Point(95, 323);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(47, 13);
             this.label12.TabIndex = 30;
@@ -142,7 +142,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(158, 98);
+            this.textBox8.Location = new System.Drawing.Point(148, 98);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(78, 20);
             this.textBox8.TabIndex = 29;
@@ -150,7 +150,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(97, 101);
+            this.label11.Location = new System.Drawing.Point(87, 101);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 13);
             this.label11.TabIndex = 28;
@@ -178,7 +178,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(73, 148);
+            this.groupBox1.Location = new System.Drawing.Point(63, 148);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(514, 133);
             this.groupBox1.TabIndex = 34;
@@ -216,6 +216,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormControle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle de viagens";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
