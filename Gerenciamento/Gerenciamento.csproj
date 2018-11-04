@@ -76,6 +76,24 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaCaminhao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaCaminhao.Designer.cs">
+      <DependentUpon>frmConsultaCaminhao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaMotorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaMotorista.Designer.cs">
+      <DependentUpon>frmConsultaMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaViajem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaViajem.Designer.cs">
+      <DependentUpon>frmConsultaViajem.cs</DependentUpon>
+    </Compile>
     <Compile Include="models\CategoriaHabilitacao.cs" />
     <Compile Include="models\Motorista.cs" />
     <Compile Include="models\Pessoa.cs" />
@@ -105,6 +123,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaCaminhao.resx">
+      <DependentUpon>frmConsultaCaminhao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaMotorista.resx">
+      <DependentUpon>frmConsultaMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaViajem.resx">
+      <DependentUpon>frmConsultaViajem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\Gerenciamento.FormBase.resources" />
     <EmbeddedResource Include="obj\Debug\Gerenciamento.FormCadastroCaminhao.resources" />

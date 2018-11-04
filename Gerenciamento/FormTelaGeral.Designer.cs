@@ -39,7 +39,9 @@
             this.caminhãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.motoristaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.relarorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -71,7 +73,7 @@
             this.viajemToolStripMenuItem.Name = "viajemToolStripMenuItem";
             this.viajemToolStripMenuItem.ShortcutKeyDisplayString = "";
             this.viajemToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F1)));
-            this.viajemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viajemToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.viajemToolStripMenuItem.Text = "Viajem";
             this.viajemToolStripMenuItem.Click += new System.EventHandler(this.viajemToolStripMenuItem_Click);
             // 
@@ -81,7 +83,7 @@
             this.caminhãoToolStripMenuItem.Name = "caminhãoToolStripMenuItem";
             this.caminhãoToolStripMenuItem.ShortcutKeyDisplayString = "";
             this.caminhãoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F2)));
-            this.caminhãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.caminhãoToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.caminhãoToolStripMenuItem.Text = "Caminhão";
             this.caminhãoToolStripMenuItem.Click += new System.EventHandler(this.caminhãoToolStripMenuItem_Click);
             // 
@@ -90,7 +92,7 @@
             this.motoristaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("motoristaToolStripMenuItem.Image")));
             this.motoristaToolStripMenuItem.Name = "motoristaToolStripMenuItem";
             this.motoristaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F3)));
-            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.motoristaToolStripMenuItem.Text = "Motorista";
             this.motoristaToolStripMenuItem.Click += new System.EventHandler(this.motoristaToolStripMenuItem_Click);
             // 
@@ -111,6 +113,7 @@
             this.viajemToolStripMenuItem1.Name = "viajemToolStripMenuItem1";
             this.viajemToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.viajemToolStripMenuItem1.Text = "Viajem";
+            this.viajemToolStripMenuItem1.Click += new System.EventHandler(this.viajemToolStripMenuItem1_Click);
             // 
             // caminhãoToolStripMenuItem1
             // 
@@ -118,6 +121,7 @@
             this.caminhãoToolStripMenuItem1.Name = "caminhãoToolStripMenuItem1";
             this.caminhãoToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.caminhãoToolStripMenuItem1.Text = "Caminhão";
+            this.caminhãoToolStripMenuItem1.Click += new System.EventHandler(this.caminhãoToolStripMenuItem1_Click);
             // 
             // motoristaToolStripMenuItem1
             // 
@@ -125,6 +129,7 @@
             this.motoristaToolStripMenuItem1.Name = "motoristaToolStripMenuItem1";
             this.motoristaToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.motoristaToolStripMenuItem1.Text = "Motorista";
+            this.motoristaToolStripMenuItem1.Click += new System.EventHandler(this.motoristaToolStripMenuItem1_Click);
             // 
             // relarorioToolStripMenuItem
             // 
@@ -133,12 +138,23 @@
             this.relarorioToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.relarorioToolStripMenuItem.Text = "Relarorio";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(600, 260);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormTelaGeral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormTelaGeral";
@@ -146,6 +162,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +180,6 @@
         private System.Windows.Forms.ToolStripMenuItem caminhãoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem motoristaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem relarorioToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
