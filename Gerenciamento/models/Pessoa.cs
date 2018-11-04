@@ -19,6 +19,8 @@ namespace Gerenciamento.models
         public string CEP { get; set; }
         public string Telefone1 { get; set; }
         public string Telefone2 { get; set; }
+        public string Rg { get; set; }
+        public string Cpf { get; set; }
 
     }
 }

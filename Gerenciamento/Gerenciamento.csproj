@@ -94,6 +94,7 @@
     <Compile Include="frmConsultaViajem.Designer.cs">
       <DependentUpon>frmConsultaViajem.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\Caminhao.cs" />
     <Compile Include="models\CategoriaHabilitacao.cs" />
     <Compile Include="models\Motorista.cs" />
     <Compile Include="models\Pessoa.cs" />
