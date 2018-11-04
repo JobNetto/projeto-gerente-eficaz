@@ -53,5 +53,23 @@ namespace Gerenciamento
             var frm = new frmConsultaCaminhao();
             frm.ShowDialog();
         }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new FormControle();
+            frm.ShowDialog();
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new FormCadastroCaminhao();
+            frm.ShowDialog();
+        }
+
+        private void motoristasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new FormCadastroMotorista();
+            frm.ShowDialog();
+        }
     }
 }
