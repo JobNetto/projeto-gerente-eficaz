@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastroCaminhao));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,25 +38,23 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCor = new System.Windows.Forms.TextBox();
             this.txtPlaca = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.dtModelo = new System.Windows.Forms.DateTimePicker();
+            this.dtFabricacao = new System.Windows.Forms.DateTimePicker();
+            this.txtCapacidade = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtKmInicial = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbDiesel = new System.Windows.Forms.RadioButton();
+            this.rbGasolina = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.ckE = new System.Windows.Forms.CheckBox();
             this.ckD = new System.Windows.Forms.CheckBox();
-            this.ckC = new System.Windows.Forms.CheckBox();
-            this.ckB = new System.Windows.Forms.CheckBox();
-            this.ckA = new System.Windows.Forms.CheckBox();
+            this.ckABC = new System.Windows.Forms.CheckBox();
             this.txtChassi = new System.Windows.Forms.TextBox();
             this.txtCodRenavam = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -63,9 +62,8 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btCancelar = new System.Windows.Forms.Button();
             this.btGravar = new System.Windows.Forms.Button();
-            this.dtFabricacao = new System.Windows.Forms.DateTimePicker();
-            this.dtModelo = new System.Windows.Forms.DateTimePicker();
             this.txtMarca = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -119,11 +117,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(342, 105);
+            this.label6.Location = new System.Drawing.Point(399, 98);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(23, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Cor";
+            this.toolTip1.SetToolTip(this.label6, "Cor do Veículo");
             // 
             // txtModelo
             // 
@@ -141,12 +140,12 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Placa";
             // 
-            // textBox5
+            // txtCor
             // 
-            this.textBox5.Location = new System.Drawing.Point(371, 98);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(78, 20);
-            this.textBox5.TabIndex = 11;
+            this.txtCor.Location = new System.Drawing.Point(428, 95);
+            this.txtCor.Name = "txtCor";
+            this.txtCor.Size = new System.Drawing.Size(145, 20);
+            this.txtCor.TabIndex = 11;
             // 
             // txtPlaca
             // 
@@ -159,18 +158,16 @@
             // 
             this.groupBox1.Controls.Add(this.dtModelo);
             this.groupBox1.Controls.Add(this.dtFabricacao);
-            this.groupBox1.Controls.Add(this.textBox11);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.textBox12);
+            this.groupBox1.Controls.Add(this.txtCapacidade);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.txtKmInicial);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.txtChassi);
             this.groupBox1.Controls.Add(this.txtCodRenavam);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtCor);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label2);
@@ -185,53 +182,53 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalhes do Veículo";
             // 
-            // textBox11
+            // dtModelo
             // 
-            this.textBox11.Location = new System.Drawing.Point(525, 134);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(78, 20);
-            this.textBox11.TabIndex = 27;
+            this.dtModelo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtModelo.Location = new System.Drawing.Point(523, 28);
+            this.dtModelo.Name = "dtModelo";
+            this.dtModelo.Size = new System.Drawing.Size(80, 20);
+            this.dtModelo.TabIndex = 28;
             // 
-            // label12
+            // dtFabricacao
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(478, 137);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(23, 13);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "KM";
+            this.dtFabricacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFabricacao.Location = new System.Drawing.Point(371, 28);
+            this.dtFabricacao.Name = "dtFabricacao";
+            this.dtFabricacao.Size = new System.Drawing.Size(80, 20);
+            this.dtFabricacao.TabIndex = 20;
             // 
-            // textBox12
+            // txtCapacidade
             // 
-            this.textBox12.Location = new System.Drawing.Point(525, 98);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(78, 20);
-            this.textBox12.TabIndex = 25;
+            this.txtCapacidade.Location = new System.Drawing.Point(428, 129);
+            this.txtCapacidade.Name = "txtCapacidade";
+            this.txtCapacidade.Size = new System.Drawing.Size(145, 20);
+            this.txtCapacidade.TabIndex = 25;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(455, 104);
+            this.label13.Location = new System.Drawing.Point(358, 132);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(64, 13);
             this.label13.TabIndex = 24;
             this.label13.Text = "Capacidade";
             // 
-            // textBox8
+            // txtKmInicial
             // 
-            this.textBox8.Location = new System.Drawing.Point(371, 130);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(78, 20);
-            this.textBox8.TabIndex = 23;
+            this.txtKmInicial.Location = new System.Drawing.Point(428, 165);
+            this.txtKmInicial.Name = "txtKmInicial";
+            this.txtKmInicial.Size = new System.Drawing.Size(145, 20);
+            this.txtKmInicial.TabIndex = 23;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(342, 137);
+            this.label11.Location = new System.Drawing.Point(352, 168);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(23, 13);
+            this.label11.Size = new System.Drawing.Size(64, 13);
             this.label11.TabIndex = 22;
-            this.label11.Text = "KM";
+            this.label11.Text = "KM Rodado";
             // 
             // label10
             // 
@@ -244,8 +241,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.rbDiesel);
+            this.groupBox2.Controls.Add(this.rbGasolina);
             this.groupBox2.Location = new System.Drawing.Point(192, 104);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(140, 81);
@@ -253,35 +250,33 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tipo de Combusivel";
             // 
-            // radioButton2
+            // rbDiesel
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 47);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(54, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Diesel";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbDiesel.AutoSize = true;
+            this.rbDiesel.Location = new System.Drawing.Point(6, 47);
+            this.rbDiesel.Name = "rbDiesel";
+            this.rbDiesel.Size = new System.Drawing.Size(54, 17);
+            this.rbDiesel.TabIndex = 1;
+            this.rbDiesel.Text = "Diesel";
+            this.rbDiesel.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbGasolina
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 24);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(66, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Gasolina";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbGasolina.AutoSize = true;
+            this.rbGasolina.Checked = true;
+            this.rbGasolina.Location = new System.Drawing.Point(6, 24);
+            this.rbGasolina.Name = "rbGasolina";
+            this.rbGasolina.Size = new System.Drawing.Size(66, 17);
+            this.rbGasolina.TabIndex = 0;
+            this.rbGasolina.TabStop = true;
+            this.rbGasolina.Text = "Gasolina";
+            this.rbGasolina.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.ckE);
             this.groupBox3.Controls.Add(this.ckD);
-            this.groupBox3.Controls.Add(this.ckC);
-            this.groupBox3.Controls.Add(this.ckB);
-            this.groupBox3.Controls.Add(this.ckA);
+            this.groupBox3.Controls.Add(this.ckABC);
             this.groupBox3.Location = new System.Drawing.Point(13, 104);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(173, 81);
@@ -292,7 +287,7 @@
             // ckE
             // 
             this.ckE.AutoSize = true;
-            this.ckE.Location = new System.Drawing.Point(127, 24);
+            this.ckE.Location = new System.Drawing.Point(88, 24);
             this.ckE.Name = "ckE";
             this.ckE.Size = new System.Drawing.Size(33, 17);
             this.ckE.TabIndex = 16;
@@ -302,42 +297,24 @@
             // ckD
             // 
             this.ckD.AutoSize = true;
-            this.ckD.Location = new System.Drawing.Point(66, 49);
+            this.ckD.Location = new System.Drawing.Point(6, 47);
             this.ckD.Name = "ckD";
             this.ckD.Size = new System.Drawing.Size(34, 17);
             this.ckD.TabIndex = 15;
             this.ckD.Text = "D";
             this.ckD.UseVisualStyleBackColor = true;
             // 
-            // ckC
+            // ckABC
             // 
-            this.ckC.AutoSize = true;
-            this.ckC.Location = new System.Drawing.Point(66, 24);
-            this.ckC.Name = "ckC";
-            this.ckC.Size = new System.Drawing.Size(33, 17);
-            this.ckC.TabIndex = 14;
-            this.ckC.Text = "C";
-            this.ckC.UseVisualStyleBackColor = true;
-            // 
-            // ckB
-            // 
-            this.ckB.AutoSize = true;
-            this.ckB.Location = new System.Drawing.Point(6, 48);
-            this.ckB.Name = "ckB";
-            this.ckB.Size = new System.Drawing.Size(33, 17);
-            this.ckB.TabIndex = 13;
-            this.ckB.Text = "B";
-            this.ckB.UseVisualStyleBackColor = true;
-            // 
-            // ckA
-            // 
-            this.ckA.AutoSize = true;
-            this.ckA.Location = new System.Drawing.Point(6, 25);
-            this.ckA.Name = "ckA";
-            this.ckA.Size = new System.Drawing.Size(33, 17);
-            this.ckA.TabIndex = 12;
-            this.ckA.Text = "A";
-            this.ckA.UseVisualStyleBackColor = true;
+            this.ckABC.AutoSize = true;
+            this.ckABC.Checked = true;
+            this.ckABC.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckABC.Location = new System.Drawing.Point(6, 25);
+            this.ckABC.Name = "ckABC";
+            this.ckABC.Size = new System.Drawing.Size(52, 17);
+            this.ckABC.TabIndex = 12;
+            this.ckABC.Text = "AB/C";
+            this.ckABC.UseVisualStyleBackColor = true;
             // 
             // txtChassi
             // 
@@ -397,22 +374,6 @@
             this.btGravar.Text = "&Gravar";
             this.btGravar.UseVisualStyleBackColor = false;
             // 
-            // dtFabricacao
-            // 
-            this.dtFabricacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFabricacao.Location = new System.Drawing.Point(371, 28);
-            this.dtFabricacao.Name = "dtFabricacao";
-            this.dtFabricacao.Size = new System.Drawing.Size(80, 20);
-            this.dtFabricacao.TabIndex = 20;
-            // 
-            // dtModelo
-            // 
-            this.dtModelo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtModelo.Location = new System.Drawing.Point(523, 28);
-            this.dtModelo.Name = "dtModelo";
-            this.dtModelo.Size = new System.Drawing.Size(80, 20);
-            this.dtModelo.TabIndex = 28;
-            // 
             // txtMarca
             // 
             this.txtMarca.Location = new System.Drawing.Point(66, 40);
@@ -460,7 +421,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCor;
         private System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label8;
@@ -471,23 +432,20 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox ckE;
         private System.Windows.Forms.CheckBox ckD;
-        private System.Windows.Forms.CheckBox ckC;
-        private System.Windows.Forms.CheckBox ckB;
-        private System.Windows.Forms.CheckBox ckA;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.CheckBox ckABC;
+        private System.Windows.Forms.TextBox txtKmInicial;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbDiesel;
+        private System.Windows.Forms.RadioButton rbGasolina;
         private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.Button btGravar;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtCapacidade;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DateTimePicker dtModelo;
         private System.Windows.Forms.DateTimePicker dtFabricacao;
         private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
