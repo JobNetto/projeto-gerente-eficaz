@@ -12,7 +12,6 @@ namespace Gerenciamento.models
         public string Placa { get; set; }
         public string Codigo { get; set; }
         public string Modelo { get; set; }
-        public string 
 
     }
 }
