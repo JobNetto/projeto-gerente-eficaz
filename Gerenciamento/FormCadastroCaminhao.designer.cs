@@ -64,15 +64,20 @@
             this.btGravar = new System.Windows.Forms.Button();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 43);
+            this.label1.Location = new System.Drawing.Point(23, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 0;
@@ -134,7 +139,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(283, 44);
+            this.label7.Location = new System.Drawing.Point(283, 67);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 13);
             this.label7.TabIndex = 10;
@@ -146,10 +151,11 @@
             this.txtCor.Name = "txtCor";
             this.txtCor.Size = new System.Drawing.Size(145, 20);
             this.txtCor.TabIndex = 11;
+            this.toolTip1.SetToolTip(this.txtCor, "Cor do Veiculo");
             // 
             // txtPlaca
             // 
-            this.txtPlaca.Location = new System.Drawing.Point(323, 40);
+            this.txtPlaca.Location = new System.Drawing.Point(323, 63);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(111, 20);
             this.txtPlaca.TabIndex = 12;
@@ -175,7 +181,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(12, 82);
+            this.groupBox1.Location = new System.Drawing.Point(12, 105);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(609, 208);
             this.groupBox1.TabIndex = 14;
@@ -204,6 +210,7 @@
             this.txtCapacidade.Name = "txtCapacidade";
             this.txtCapacidade.Size = new System.Drawing.Size(145, 20);
             this.txtCapacidade.TabIndex = 25;
+            this.toolTip1.SetToolTip(this.txtCapacidade, "Capadica total do tanque de comustível");
             // 
             // label13
             // 
@@ -213,6 +220,7 @@
             this.label13.Size = new System.Drawing.Size(64, 13);
             this.label13.TabIndex = 24;
             this.label13.Text = "Capacidade";
+            this.toolTip1.SetToolTip(this.label13, "Capadica total do tanque de comustível");
             // 
             // txtKmInicial
             // 
@@ -342,7 +350,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(440, 43);
+            this.label9.Location = new System.Drawing.Point(440, 66);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 13);
             this.label9.TabIndex = 15;
@@ -350,7 +358,7 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(486, 41);
+            this.txtCodigo.Location = new System.Drawing.Point(486, 64);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(111, 20);
             this.txtCodigo.TabIndex = 16;
@@ -376,10 +384,41 @@
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(66, 40);
+            this.txtMarca.Location = new System.Drawing.Point(66, 63);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(211, 20);
             this.txtMarca.TabIndex = 19;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem,
+            this.salvarToolStripMenuItem,
+            this.pesquisarToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(634, 24);
+            this.menuStrip1.TabIndex = 20;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // novoToolStripMenuItem
+            // 
+            this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.novoToolStripMenuItem.Text = "Novo";
+            // 
+            // salvarToolStripMenuItem
+            // 
+            this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
+            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.salvarToolStripMenuItem.Text = "Salvar";
+            // 
+            // pesquisarToolStripMenuItem
+            // 
+            this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
+            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.pesquisarToolStripMenuItem.Text = "Pesquisar";
+            this.pesquisarToolStripMenuItem.Click += new System.EventHandler(this.pesquisarToolStripMenuItem_Click);
             // 
             // FormCadastroCaminhao
             // 
@@ -387,6 +426,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(634, 421);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btGravar);
@@ -406,6 +446,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,5 +489,9 @@
         private System.Windows.Forms.DateTimePicker dtFabricacao;
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
     }
 }

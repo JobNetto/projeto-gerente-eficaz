@@ -26,5 +26,11 @@ namespace Gerenciamento
         {
 
         }
+
+        private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new frmConsultaMotorista();
+            frm.ShowDialog();
+        }
     }
 }

@@ -64,11 +64,11 @@
     <Compile Include="FormCadastroMotorista.Designer.cs">
       <DependentUpon>FormCadastroMotorista.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControle.cs">
+    <Compile Include="FormControleEntrega.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormControle.Designer.cs">
-      <DependentUpon>FormControle.cs</DependentUpon>
+    <Compile Include="FormControleEntrega.Designer.cs">
+      <DependentUpon>FormControleEntrega.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -88,11 +88,11 @@
     <Compile Include="frmConsultaMotorista.Designer.cs">
       <DependentUpon>frmConsultaMotorista.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsultaViajem.cs">
+    <Compile Include="frmConsultaEntrega.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsultaViajem.Designer.cs">
-      <DependentUpon>frmConsultaViajem.cs</DependentUpon>
+    <Compile Include="frmConsultaEntrega.Designer.cs">
+      <DependentUpon>frmConsultaEntrega.cs</DependentUpon>
     </Compile>
     <Compile Include="models\Caminhao.cs" />
     <Compile Include="models\CategoriaHabilitacao.cs" />
@@ -119,8 +119,8 @@
     <EmbeddedResource Include="FormCadastroMotorista.resx">
       <DependentUpon>FormCadastroMotorista.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControle.resx">
-      <DependentUpon>FormControle.cs</DependentUpon>
+    <EmbeddedResource Include="FormControleEntrega.resx">
+      <DependentUpon>FormControleEntrega.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -131,8 +131,8 @@
     <EmbeddedResource Include="frmConsultaMotorista.resx">
       <DependentUpon>frmConsultaMotorista.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsultaViajem.resx">
-      <DependentUpon>frmConsultaViajem.cs</DependentUpon>
+    <EmbeddedResource Include="frmConsultaEntrega.resx">
+      <DependentUpon>frmConsultaEntrega.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\Gerenciamento.FormBase.resources" />
     <EmbeddedResource Include="obj\Debug\Gerenciamento.FormCadastroCaminhao.resources" />
