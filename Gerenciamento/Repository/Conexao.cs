@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -7,11 +8,10 @@ using System.Threading.Tasks;
 
 namespace Gerenciamento.Repository
 {
-    public class Conexao
+    public abstract class Conexao
     {
-        public SqlConnection cn = new SqlConnection();
-
-        public void Conectar()
+        protected SqlConnection cn = new SqlConnection();
+        protected void Conectar()
         {
             string s = "";
             s = "Server=DESKTOP-PQSDVH0\\SQLEXPRESS;Database=GERENTE_EFICAZ;UID=sa;PWD=123;";
@@ -19,9 +19,19 @@ namespace Gerenciamento.Repository
             cn.Open();
         }
 
-        public void Desconectar()
+        protected void Desconectar()
         {
             cn.Close();
         }
+
+        protected readonly Conexao connection;
+
+        public abstract void Inserir(object objeto);
+
+        public abstract void Alterar(object objeto);
+
+        public abstract void Delete(int id);
+
+        public abstract DataSet GetAll();
     }
 }
