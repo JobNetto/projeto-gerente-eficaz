@@ -24,8 +24,7 @@ namespace Gerenciamento.Repository
 
                 string sql = "";
                 sql = $@"INSERT INTO [dbo].[Motorista]
-           ([Id]
-           ,[Nome]
+           ([Nome]
            ,[Codigo]
            ,[Rua]
            ,[Bairro]
