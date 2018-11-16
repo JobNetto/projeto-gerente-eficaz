@@ -1,4 +1,5 @@
 ﻿using Gerenciamento.models;
+using Gerenciamento.presenter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace Gerenciamento.views
 {
     public interface ICadastroMotorista
     {
+        PCadastroMorista Presenter { get; set; }
         string Nome { get; set; }
         string Codigo { get; set; }
         string Rua { get; set; }
