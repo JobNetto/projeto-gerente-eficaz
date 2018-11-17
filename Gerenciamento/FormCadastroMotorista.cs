@@ -218,6 +218,7 @@ namespace Gerenciamento
 
         private void FormCadastro_Load(object sender, EventArgs e)
         {
+
         }
 
         private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)

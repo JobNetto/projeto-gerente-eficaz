@@ -15,7 +15,7 @@ namespace Gerenciamento
 {
     public partial class FormCadastroCaminhao : FormBase, ICadastroCaminhao
     {
-        public PCadastroCaminhao Presenter { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public PCadastroCaminhao Presenter { get; set; }
         public string Marca { get => txtMarca.Text; set => txtMarca.Text = value; }
         public string Placa { get => txtPlaca.Text; set => txtPlaca.Text = value; }
         public string Codigo { get => txtCodigo.Text; set => txtCodigo.Text = value; }
@@ -64,7 +64,7 @@ namespace Gerenciamento
                 rbDiesel.Checked = c.Diesel;
             }
         }
-        public string Cor { get =>  txtCor.Text; set => txtCor.Text = value; }
+        public string Cor { get => txtCor.Text; set => txtCor.Text = value; }
         public double Capacidade { get => double.Parse(txtCapacidade.Text); set => txtCapacidade.Text = value.ToString(); }
         public int Km { get => int.Parse(txtKmInicial.Text); set => value.ToString(); }
 
@@ -75,13 +75,44 @@ namespace Gerenciamento
 
         private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var fmr = new frmConsultaCaminhao();
-            fmr.ShowDialog();
+            var frm = new frmConsultaCaminhao();
+            frm.ShowDialog();
+            this.caminhao = frm.caminhao;
+            if (caminhao != null)
+                CarregaComponentes();
         }
 
         private void FormCadastroCaminhao_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void salvarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void novoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            caminhao = new Caminhao();
+            CarregaComponentes();
+        }
+
+        private void CarregaComponentes()
+        {
+            txtMarca.Text = caminhao.Marca;
+            txtPlaca.Text = caminhao.Placa;
+            txtCodigo.Text = caminhao.Codigo;
+            txtModelo.Text = caminhao.Modelo;
+            dtFabricacao.Value = caminhao.AnoModelo;
+            dtModelo.Value = caminhao.AnoFabricacao;
+            txtChassi.Text = caminhao.Chassi;
+            txtCodRenavam.Text = caminhao.CodRenavam;
+            txtCor.Text = caminhao.CodRenavam;
+            txtCapacidade.Text = caminhao.Capacidade.ToString();
+            txtKmInicial.Text = caminhao.KmRodado.ToString();
+        }
+
+        private Caminhao caminhao { get; set; }
     }
 }
