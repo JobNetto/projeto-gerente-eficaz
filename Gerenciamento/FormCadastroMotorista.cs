@@ -22,7 +22,7 @@ namespace Gerenciamento
         }
 
         public PCadastroMorista Presenter { get; set; }
-       
+
 
         public string Nome
         {
@@ -218,7 +218,6 @@ namespace Gerenciamento
 
         private void FormCadastro_Load(object sender, EventArgs e)
         {
-            Presenter.LoadComponents();
         }
 
         private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -226,7 +225,8 @@ namespace Gerenciamento
             var frm = new frmConsultaMotorista();
             frm.ShowDialog();
             this.Motorista = frm.motorista;
-            CarregaComponentes();
+            if (Motorista != null)
+                CarregaComponentes();
         }
 
         private void CarregaComponentes()
@@ -256,6 +256,17 @@ namespace Gerenciamento
         private void btCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void salvarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Presenter.Salvar(this.Motorista.Id);
+        }
+
+        private void novoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Motorista = new Motorista();
+            CarregaComponentes();
         }
     }
 }

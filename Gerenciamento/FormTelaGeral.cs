@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Gerenciamento
 {
-    public partial class FormTelaGeral : FormBase
+    public partial class FormTelaGeral : Form
     {
         public FormTelaGeral()
         {
@@ -58,12 +58,14 @@ namespace Gerenciamento
         {
             var frm = new FormControleEntrega();
             frm.ShowDialog();
+            frm.Dispose();
         }
 
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frm = new FormCadastroCaminhao();
             frm.ShowDialog();
+            frm.Dispose();
         }
 
         private void motoristasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -71,6 +73,11 @@ namespace Gerenciamento
             var frm = new FormCadastroMotorista();
             frm.ShowDialog();
             frm.Dispose();
+        }
+
+        private void FormTelaGeral_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
