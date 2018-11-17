@@ -32,13 +32,13 @@ namespace Gerenciamento
 
         private void viajemToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var frm = new FormControle();
+            var frm = new FormControleEntrega();
             frm.ShowDialog();
         }
 
         private void viajemToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            var frm = new frmConsultaViajem();
+            var frm = new frmConsultaEntrega();
             frm.ShowDialog();
         }
 
@@ -56,7 +56,7 @@ namespace Gerenciamento
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var frm = new FormControle();
+            var frm = new FormControleEntrega();
             frm.ShowDialog();
         }
 

@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Gerenciamento
 {
-    public partial class frmConsultaViajem : Form
+    public partial class FormControleEntrega : FormBase
     {
-        public frmConsultaViajem()
+        public FormControleEntrega()
         {
             InitializeComponent();
+        }
+
+        private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new frmConsultaEntrega();
+            frm.ShowDialog();
         }
     }
 }

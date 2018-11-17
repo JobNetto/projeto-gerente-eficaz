@@ -15,7 +15,7 @@ namespace Gerenciamento.models
         public string Numero { get; set; }
         public string Complemento { get; set; }
         public string Cidade { get; set; }
-        public byte Uf { get; set; }
+        public string Uf { get; set; }
         public string CEP { get; set; }
         public string Telefone1 { get; set; }
         public string Telefone2 { get; set; }

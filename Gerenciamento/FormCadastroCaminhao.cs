@@ -16,5 +16,11 @@ namespace Gerenciamento
         {
             InitializeComponent();
         }
+
+        private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var fmr = new frmConsultaCaminhao();
+            fmr.ShowDialog();
+        }
     }
 }

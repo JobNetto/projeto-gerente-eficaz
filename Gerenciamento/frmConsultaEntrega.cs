@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gerenciamento
 {
-    public partial class FormControle : FormBase
+    public partial class frmConsultaEntrega : Form
     {
-        public FormControle()
+        public frmConsultaEntrega()
         {
             InitializeComponent();
         }
