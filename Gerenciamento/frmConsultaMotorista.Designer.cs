@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaMotorista));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNomeMotorista = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNomeMotorista = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
@@ -51,6 +51,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consulta";
             // 
+            // txtNomeMotorista
+            // 
+            this.txtNomeMotorista.Location = new System.Drawing.Point(73, 29);
+            this.txtNomeMotorista.Name = "txtNomeMotorista";
+            this.txtNomeMotorista.Size = new System.Drawing.Size(319, 20);
+            this.txtNomeMotorista.TabIndex = 3;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(479, 49);
@@ -59,6 +66,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -68,13 +76,6 @@
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nome";
-            // 
-            // txtNomeMotorista
-            // 
-            this.txtNomeMotorista.Location = new System.Drawing.Point(73, 29);
-            this.txtNomeMotorista.Name = "txtNomeMotorista";
-            this.txtNomeMotorista.Size = new System.Drawing.Size(319, 20);
-            this.txtNomeMotorista.TabIndex = 3;
             // 
             // button2
             // 

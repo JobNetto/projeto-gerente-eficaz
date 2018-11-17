@@ -16,6 +16,9 @@ namespace Gerenciamento.views
         string Rua { get; set; }
         string Bairro { get; set; }
         string Numero { get; set; }
+        string RG { get; set; }
+        string CPF { get; set; }
+
         string Complemento { get; set; }
         string Cidade { get; set; }
         string Uf { get; set; }

@@ -162,6 +162,7 @@
             // txtRG
             // 
             this.txtRG.Location = new System.Drawing.Point(214, 102);
+            this.txtRG.MaxLength = 14;
             this.txtRG.Name = "txtRG";
             this.txtRG.Size = new System.Drawing.Size(101, 20);
             this.txtRG.TabIndex = 19;
@@ -219,6 +220,7 @@
             // txtBairro
             // 
             this.txtBairro.Location = new System.Drawing.Point(50, 64);
+            this.txtBairro.MaxLength = 50;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(123, 20);
             this.txtBairro.TabIndex = 6;
@@ -260,6 +262,7 @@
             // txtRua
             // 
             this.txtRua.Location = new System.Drawing.Point(50, 30);
+            this.txtRua.MaxLength = 50;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(226, 20);
             this.txtRua.TabIndex = 3;
@@ -267,6 +270,7 @@
             // txtCidade
             // 
             this.txtCidade.Location = new System.Drawing.Point(235, 64);
+            this.txtCidade.MaxLength = 50;
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(122, 20);
             this.txtCidade.TabIndex = 7;
@@ -274,6 +278,7 @@
             // txtUF
             // 
             this.txtUF.Location = new System.Drawing.Point(409, 64);
+            this.txtUF.MaxLength = 2;
             this.txtUF.Name = "txtUF";
             this.txtUF.Size = new System.Drawing.Size(41, 20);
             this.txtUF.TabIndex = 8;
@@ -370,6 +375,7 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(65, 41);
+            this.txtNome.MaxLength = 50;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(399, 20);
             this.txtNome.TabIndex = 1;
@@ -377,6 +383,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(527, 41);
+            this.txtCodigo.MaxLength = 10;
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(95, 20);
             this.txtCodigo.TabIndex = 2;

@@ -21,9 +21,10 @@ namespace Gerenciamento.Repository
             if (objeto is Motorista)
             {
                 var motorista = objeto as Motorista;
-
+                var g = motorista.Telefone1.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ","");
                 string sql = "";
-                sql = $@"INSERT INTO [dbo].[Motorista]
+                sql = $@"
+            INSERT INTO [dbo].[Motorista]
            ([Nome]
            ,[Codigo]
            ,[Rua]
@@ -31,27 +32,26 @@ namespace Gerenciamento.Repository
            ,[Numero]
            ,[Complemento]
            ,[Cidade]
-           ,[UF]
+           ,[Uf]
            ,[CEP]
            ,[Telefone1]
            ,[Telefone2]
            ,[RG]
            ,[CPF])
      VALUES
-           ('{motorista.Nome}',
-            '{motorista.Codigo}',
-            '{motorista.Rua}',
-            '{motorista.Bairro}',
-            '{motorista.Numero}',
-            '{motorista.Complemento}',
-            '{motorista.Cidade}',
-             {motorista.Uf},
-            '{motorista.CEP}',
-            '{motorista.Telefone1}',
-            '{motorista.Telefone2}',
-            '{motorista.RG}',
-            '{motorista.CPF}'
-            )";
+           ('{motorista.Nome}'
+           ,'{motorista.Codigo}'
+           ,'{motorista.Rua}'
+           ,'{motorista.Bairro}'
+           ,'{motorista.Numero}'
+           ,'{motorista.Complemento}'
+           ,'{motorista.Cidade}'
+           ,'{motorista.Uf}'
+           ,'{motorista.CEP.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ", "")}'
+           ,'{motorista.Telefone1.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ", "")}'
+           ,'{motorista.Telefone2.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ", "")}'
+           ,'{motorista.RG.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ", "")}'
+           ,'{motorista.CPF.Replace("(","").Replace(")","").Replace("-","").Replace("_", "").Replace(".","").Replace(" ", "")}')";
                 SqlCommand cd = new SqlCommand
                 {
                     Connection = cn,
@@ -78,11 +78,11 @@ namespace Gerenciamento.Repository
                           ,[Complemento] =  '{motorista.Complemento}'
                           ,[Cidade] = '{motorista.Cidade}'
                           ,[Uf] = '{motorista.Uf}'
-                          ,[CEP] = '{motorista.CEP}'
-                          ,[Telefone1] ='{motorista.Telefone1}'
-                          ,[Telefone2] =  '{motorista.Telefone2}'
+                          ,[CEP] = '{motorista.CEP.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ", "")}'
+                          ,[Telefone1] ='{motorista.Telefone1.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ", "")}'
+                          ,[Telefone2] =  '{motorista.Telefone2.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ", "")}'
                           ,[RG] =  '{motorista.RG}'
-                          ,[CPF] =   '{motorista.CPF}'
+                          ,[CPF] =   '{motorista.CPF.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ", "")}'
                      WHERE Id = {motorista.Id}";
                 SqlCommand cd = new SqlCommand
                 {
@@ -101,7 +101,12 @@ namespace Gerenciamento.Repository
 
         public override DataSet GetAll()
         {
-            throw new NotImplementedException();
+            string sql = "SELECT * FROM MOTORISTA";
+            //  sql += " Where NomeCliente like '" + Nome + "%'";
+            SqlDataAdapter da = new SqlDataAdapter(sql, cn);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            return ds;
         }
 
         //public void IncluirCliente()
@@ -172,5 +177,5 @@ namespace Gerenciamento.Repository
         //        Sexo = char.Parse(dr["Sexo"].ToString());
         //    }
         //}
-        }
+    }
 }

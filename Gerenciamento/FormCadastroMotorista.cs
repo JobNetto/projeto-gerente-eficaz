@@ -21,18 +21,8 @@ namespace Gerenciamento
             Presenter = new PCadastroMorista(this);
         }
 
-        public PCadastroMorista Presenter
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public PCadastroMorista Presenter { get; set; }
+       
 
         public string Nome
         {
@@ -200,20 +190,48 @@ namespace Gerenciamento
             }
         }
 
+        public string RG
+        {
+            get
+            {
+                return txtRG.Text;
+            }
+
+            set
+            {
+                txtRG.Text = value;
+            }
+        }
+
+        public string CPF
+        {
+            get
+            {
+                return txtCPF.Text;
+            }
+
+            set
+            {
+                txtCPF.Text = value;
+            }
+        }
+
         private void FormCadastro_Load(object sender, EventArgs e)
         {
-
+            Presenter.LoadComponents();
         }
 
         private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frm = new frmConsultaMotorista();
             frm.ShowDialog();
+            this.Motorista = frm.motorista;
         }
 
+        private Gerenciamento.models.Motorista Motorista { get; set; }
         private void btGravar_Click(object sender, EventArgs e)
         {
-
+            Presenter.Gravar();
         }
     }
 }
