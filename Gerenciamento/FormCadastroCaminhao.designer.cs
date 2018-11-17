@@ -47,7 +47,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txtKmInicial = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbDiesel = new System.Windows.Forms.RadioButton();
             this.rbGasolina = new System.Windows.Forms.RadioButton();
@@ -168,7 +167,6 @@
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.txtKmInicial);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.txtChassi);
@@ -237,15 +235,6 @@
             this.label11.Size = new System.Drawing.Size(64, 13);
             this.label11.TabIndex = 22;
             this.label11.Text = "KM Rodado";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(293, 98);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(23, 13);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "Cor";
             // 
             // groupBox2
             // 
@@ -440,6 +429,7 @@
             this.Name = "FormCadastroCaminhao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Caminhao";
+            this.Load += new System.EventHandler(this.FormCadastroCaminhao_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -477,7 +467,6 @@
         private System.Windows.Forms.CheckBox ckABC;
         private System.Windows.Forms.TextBox txtKmInicial;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rbDiesel;
         private System.Windows.Forms.RadioButton rbGasolina;
