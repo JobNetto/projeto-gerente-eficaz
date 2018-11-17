@@ -226,12 +226,36 @@ namespace Gerenciamento
             var frm = new frmConsultaMotorista();
             frm.ShowDialog();
             this.Motorista = frm.motorista;
+            CarregaComponentes();
+        }
+
+        private void CarregaComponentes()
+        {
+            txtNome.Text = Motorista.Nome;
+            txtCodigo.Text = Motorista.Codigo;
+            txtRua.Text = Motorista.Rua;
+            txtBairro.Text = Motorista.Bairro;
+            txtCidade.Text = Motorista.Cidade;
+            txtUF.Text = Motorista.Uf;
+            txtCPF.Text = Motorista.CPF;
+            txtRG.Text = Motorista.RG;
+            txtTelefone1.Text = Motorista.Telefone1;
+            txtTelefone2.Text = Motorista.Telefone2;
+            txtCEP.Text = Motorista.CEP;
+            txtNumero.Text = Motorista.Numero;
+            txtComplemento.Text = Motorista.Complemento;
+
         }
 
         private Gerenciamento.models.Motorista Motorista { get; set; }
         private void btGravar_Click(object sender, EventArgs e)
         {
             Presenter.Gravar();
+        }
+
+        private void btCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

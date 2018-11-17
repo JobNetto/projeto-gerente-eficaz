@@ -70,6 +70,7 @@ namespace Gerenciamento
         {
             var frm = new FormCadastroMotorista();
             frm.ShowDialog();
+            frm.Dispose();
         }
     }
 }
