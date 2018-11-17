@@ -52,9 +52,9 @@
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtUF = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.ckE = new System.Windows.Forms.CheckBox();
+            this.ckD = new System.Windows.Forms.CheckBox();
+            this.ckABC = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtTelefone2 = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefone1 = new System.Windows.Forms.MaskedTextBox();
@@ -280,9 +280,9 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.checkBox5);
-            this.groupBox3.Controls.Add(this.checkBox4);
-            this.groupBox3.Controls.Add(this.checkBox1);
+            this.groupBox3.Controls.Add(this.ckE);
+            this.groupBox3.Controls.Add(this.ckD);
+            this.groupBox3.Controls.Add(this.ckABC);
             this.groupBox3.Location = new System.Drawing.Point(252, 177);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(166, 81);
@@ -290,35 +290,35 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Habilitado para categoria";
             // 
-            // checkBox5
+            // ckE
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(64, 24);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(33, 17);
-            this.checkBox5.TabIndex = 16;
-            this.checkBox5.Text = "E";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.ckE.AutoSize = true;
+            this.ckE.Location = new System.Drawing.Point(64, 24);
+            this.ckE.Name = "ckE";
+            this.ckE.Size = new System.Drawing.Size(33, 17);
+            this.ckE.TabIndex = 16;
+            this.ckE.Text = "E";
+            this.ckE.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // ckD
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 50);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(34, 17);
-            this.checkBox4.TabIndex = 15;
-            this.checkBox4.Text = "D";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.ckD.AutoSize = true;
+            this.ckD.Location = new System.Drawing.Point(6, 50);
+            this.ckD.Name = "ckD";
+            this.ckD.Size = new System.Drawing.Size(34, 17);
+            this.ckD.TabIndex = 15;
+            this.ckD.Text = "D";
+            this.ckD.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // ckABC
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 25);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(52, 17);
-            this.checkBox1.TabIndex = 12;
-            this.checkBox1.Text = "AB/C";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.ckABC.AutoSize = true;
+            this.ckABC.Location = new System.Drawing.Point(6, 25);
+            this.ckABC.Name = "ckABC";
+            this.ckABC.Size = new System.Drawing.Size(52, 17);
+            this.ckABC.TabIndex = 12;
+            this.ckABC.Text = "AB/C";
+            this.ckABC.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -494,9 +494,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.MaskedTextBox txtTelefone2;
         private System.Windows.Forms.MaskedTextBox txtTelefone1;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox ckE;
+        private System.Windows.Forms.CheckBox ckD;
+        private System.Windows.Forms.CheckBox ckABC;
         private System.Windows.Forms.Button btGravar;
         private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.MaskedTextBox txtCEP;

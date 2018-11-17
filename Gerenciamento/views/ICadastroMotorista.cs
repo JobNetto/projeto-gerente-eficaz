@@ -18,7 +18,7 @@ namespace Gerenciamento.views
         string Numero { get; set; }
         string Complemento { get; set; }
         string Cidade { get; set; }
-        byte Uf { get; set; }
+        string Uf { get; set; }
         string CEP { get; set; }
         string Telefone1 { get; set; }
         string Telefone2 { get; set; }

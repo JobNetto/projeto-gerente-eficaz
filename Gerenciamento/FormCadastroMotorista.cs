@@ -51,12 +51,12 @@ namespace Gerenciamento
         {
             get
             {
-                throw new NotImplementedException();
+                return txtCodigo.Text;
             }
 
             set
             {
-                throw new NotImplementedException();
+                txtCodigo.Text = value;
             }
         }
 
@@ -64,12 +64,12 @@ namespace Gerenciamento
         {
             get
             {
-                throw new NotImplementedException();
+                return txtRua.Text;
             }
 
             set
             {
-                throw new NotImplementedException();
+                txtRua.Text = value;
             }
         }
 
@@ -77,12 +77,12 @@ namespace Gerenciamento
         {
             get
             {
-                throw new NotImplementedException();
+                return txtBairro.Text;
             }
 
             set
             {
-                throw new NotImplementedException();
+                txtBairro.Text = value;
             }
         }
 
@@ -90,12 +90,12 @@ namespace Gerenciamento
         {
             get
             {
-                throw new NotImplementedException();
+                return txtNumero.Text;
             }
 
             set
             {
-                throw new NotImplementedException();
+                txtNumero.Text = value;
             }
         }
 
@@ -103,12 +103,12 @@ namespace Gerenciamento
         {
             get
             {
-                throw new NotImplementedException();
+                return txtComplemento.Text;
             }
 
             set
             {
-                throw new NotImplementedException();
+                txtComplemento.Text = value;
             }
         }
 
@@ -116,25 +116,25 @@ namespace Gerenciamento
         {
             get
             {
-                throw new NotImplementedException();
+                return txtCidade.Text;
             }
 
             set
             {
-                throw new NotImplementedException();
+                txtCidade.Text = value;
             }
         }
 
-        public byte Uf
+        public string Uf
         {
             get
             {
-                throw new NotImplementedException();
+                return txtUF.Text;
             }
 
             set
             {
-                throw new NotImplementedException();
+                txtUF.Text = value;
             }
         }
 
@@ -142,12 +142,12 @@ namespace Gerenciamento
         {
             get
             {
-                throw new NotImplementedException();
+                return txtCEP.Text;
             }
 
             set
             {
-                throw new NotImplementedException();
+                txtCEP.Text = value;
             }
         }
 
@@ -155,12 +155,12 @@ namespace Gerenciamento
         {
             get
             {
-                throw new NotImplementedException();
+                return txtTelefone1.Text;
             }
 
             set
             {
-                throw new NotImplementedException();
+                txtTelefone1.Text = value;
             }
         }
 
@@ -168,12 +168,12 @@ namespace Gerenciamento
         {
             get
             {
-                throw new NotImplementedException();
+                return txtTelefone2.Text;
             }
 
             set
             {
-                throw new NotImplementedException();
+                txtTelefone2.Text = value;
             }
         }
 
@@ -181,12 +181,22 @@ namespace Gerenciamento
         {
             get
             {
-                throw new NotImplementedException();
+                return new CategoriaHabilitacao
+                {
+                    CategoriaA = ckABC.Checked,
+                    CategoriaB = ckABC.Checked,
+                    CategoriaC = ckABC.Checked,
+                    CategoriaD = ckD.Checked,
+                    CategoriaE = ckE.Checked
+                };
             }
 
             set
             {
-                throw new NotImplementedException();
+                CategoriaHabilitacao c = value;
+                ckABC.Checked = c.CategoriaA;
+                ckD.Checked = c.CategoriaD;
+                ckE.Checked = c.CategoriaE;
             }
         }
 

@@ -68,6 +68,29 @@ namespace Gerenciamento.Repository
             {
                 var motorista = objeto as Motorista;
 
+                string sql = "";
+                sql = $@"UPDATE [dbo].[Motorista]
+                       SET [Nome] = '{motorista.Nome}'
+                          ,[Codigo] = '{motorista.Codigo}'
+                          ,[Rua] = '{motorista.Rua}'
+                          ,[Bairro] = '{motorista.Bairro}'
+                          ,[Numero] ='{motorista.Numero}'
+                          ,[Complemento] =  '{motorista.Complemento}'
+                          ,[Cidade] = '{motorista.Cidade}'
+                          ,[Uf] = '{motorista.Uf}'
+                          ,[CEP] = '{motorista.CEP}'
+                          ,[Telefone1] ='{motorista.Telefone1}'
+                          ,[Telefone2] =  '{motorista.Telefone2}'
+                          ,[RG] =  '{motorista.RG}'
+                          ,[CPF] =   '{motorista.CPF}'
+                     WHERE Id = {motorista.Id}";
+                SqlCommand cd = new SqlCommand
+                {
+                    Connection = cn,
+                    CommandText = sql
+                };
+
+                cd.ExecuteNonQuery();
             }
         }
 
@@ -81,7 +104,73 @@ namespace Gerenciamento.Repository
             throw new NotImplementedException();
         }
 
-      
+        //public void IncluirCliente()
+        //{
+        //    cx.Conectar();
+        //    string sql = "";
+        //    sql = "Insert into Cliente (NomeCliente,AlturaCliente,PesoCliente,Sexo) values(";
+        //    sql += "'" + Nome + "'," + Altura + "," + Peso + ",'" + Sexo + "')";
+        //    SqlCommand cd = new SqlCommand();
+        //    cd.Connection = cx.cn;
+        //    cd.CommandText = sql;
+        //    cd.ExecuteNonQuery();
+        //    cx.Desconectar();
+        //}
 
-    }
+        //public void AlterarCliente()
+        //{
+        //    cx.Conectar();
+        //    string sql = "";
+        //    sql = "Update Cliente set NomeCliente = '" + Nome + "',AlturaCliente = '" + Altura.ToString().Replace(",", ".") + ",PesoCliente = " + Peso.ToString().Replace(",", ".") + ",Sexo = '" + Sexo + "'";
+        //    sql += "Where idCliente = " + idCliente.ToString();
+        //    SqlCommand cd = new SqlCommand();
+        //    cd.Connection = cx.cn;
+        //    cd.CommandText = sql;
+        //    cd.ExecuteNonQuery();
+        //    cx.Desconectar();
+        //}
+
+        //public void ExcluirCliente()
+        //{
+        //    cx.Conectar();
+        //    string sql = "";
+        //    sql = "Delete from Cliente Where idCliente = " + idCliente.ToString();
+        //    SqlCommand cd = new SqlCommand();
+        //    cd.Connection = cx.cn;
+        //    cd.CommandText = sql;
+        //    cd.ExecuteNonQuery();
+        //    cx.Desconectar();
+        //}
+
+        //public DataSet ListarCliente()
+        //{
+        //    cx.Conectar();
+        //    string sql = "";
+        //    sql = "Select idCliente, NomeCliente from Cliente";
+        //    sql += " Where NomeCliente like '" + Nome + "%'";
+        //    SqlDataAdapter da = new SqlDataAdapter(sql, cx.cn);
+        //    DataSet ds = new DataSet();
+        //    da.Fill(ds);
+        //    cx.Desconectar();
+        //    return ds;
+        //}
+
+        //public void ConsultaCliente()
+        //{
+        //    cx.Conectar();
+        //    string sql = "";
+        //    sql = "Select * from Cliente Where idCliente = " + idCliente.ToString();
+        //    SqlCommand cd = new SqlCommand();
+        //    cd.Connection = cx.cn;
+        //    cd.CommandText = sql;
+        //    SqlDataReader dr = cd.ExecuteReader();
+        //    if (dr.Read())
+        //    {
+        //        Nome = dr["NomeCliente"].ToString();
+        //        Altura = double.Parse(dr["AlturaCliente"].ToString());
+        //        Peso = double.Parse(dr["PesoCliente"].ToString());
+        //        Sexo = char.Parse(dr["Sexo"].ToString());
+        //    }
+        //}
+        }
 }
