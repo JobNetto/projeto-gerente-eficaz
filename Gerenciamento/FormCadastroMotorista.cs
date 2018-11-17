@@ -38,12 +38,12 @@ namespace Gerenciamento
         {
             get
             {
-                throw new NotImplementedException();
+                return txtNome.Text;
             }
 
             set
             {
-                throw new NotImplementedException();
+                txtNome.Text = value;
             }
         }
 
