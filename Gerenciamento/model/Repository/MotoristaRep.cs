@@ -45,19 +45,20 @@ namespace Gerenciamento.Repository
             '{motorista.Numero}',
             '{motorista.Complemento}',
             '{motorista.Cidade}',
-            {motorista.Uf},
+             {motorista.Uf},
             '{motorista.CEP}',
             '{motorista.Telefone1}',
             '{motorista.Telefone2}',
             '{motorista.RG}',
             '{motorista.CPF}'
-            )
-           ";
-                SqlCommand cd = new SqlCommand();
-                cd.Connection = cn;
-                cd.CommandText = sql;
+            )";
+                SqlCommand cd = new SqlCommand
+                {
+                    Connection = cn,
+                    CommandText = sql
+                };
+
                 cd.ExecuteNonQuery();
-                Desconectar();
             }
         }
 
@@ -80,6 +81,7 @@ namespace Gerenciamento.Repository
             throw new NotImplementedException();
         }
 
+      
 
     }
 }
