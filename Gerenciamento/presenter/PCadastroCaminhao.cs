@@ -11,6 +11,5 @@ namespace Gerenciamento.presenter
 {
     public class PCadastroCaminhao
     {
-        
     }
 }

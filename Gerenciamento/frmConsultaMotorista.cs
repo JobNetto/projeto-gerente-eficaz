@@ -17,6 +17,7 @@ namespace Gerenciamento
             InitializeComponent();
         }
         public Gerenciamento.models.Motorista motorista { get; set; }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
