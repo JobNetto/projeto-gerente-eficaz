@@ -57,6 +57,7 @@
             this.txtNomeMotorista.Name = "txtNomeMotorista";
             this.txtNomeMotorista.Size = new System.Drawing.Size(319, 20);
             this.txtNomeMotorista.TabIndex = 3;
+            this.txtNomeMotorista.TextChanged += new System.EventHandler(this.txtNomeMotorista_TextChanged);
             // 
             // button1
             // 
@@ -79,12 +80,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(497, 326);
+            this.button2.Location = new System.Drawing.Point(1121, 505);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
             this.button2.Text = "Voltar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -94,7 +96,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 96);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(560, 219);
+            this.dataGridView1.Size = new System.Drawing.Size(1184, 391);
             this.dataGridView1.TabIndex = 5;
             // 
             // frmConsultaMotorista
@@ -102,7 +104,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.ClientSize = new System.Drawing.Size(1227, 549);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);

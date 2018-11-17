@@ -34,6 +34,6 @@ namespace Gerenciamento.Repository
 
         public abstract void Delete(int id);
 
-        public abstract DataSet GetAll();
+        public abstract DataSet GetAll(object nome);
     }
 }

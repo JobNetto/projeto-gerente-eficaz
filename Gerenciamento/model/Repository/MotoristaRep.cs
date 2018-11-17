@@ -99,10 +99,10 @@ namespace Gerenciamento.Repository
             throw new NotImplementedException();
         }
 
-        public override DataSet GetAll()
+        public override DataSet GetAll(object nome)
         {
             string sql = "SELECT * FROM MOTORISTA";
-            //  sql += " Where NomeCliente like '" + Nome + "%'";
+              sql += " WHERE Nome LIKE '" + nome.ToString() + "%'";
             SqlDataAdapter da = new SqlDataAdapter(sql, cn);
             DataSet ds = new DataSet();
             da.Fill(ds);

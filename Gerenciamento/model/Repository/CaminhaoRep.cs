@@ -25,7 +25,7 @@ namespace Gerenciamento.model.Repository
             throw new NotImplementedException();
         }
 
-        public override DataSet GetAll()
+        public override DataSet GetAll(object objeto)
         {
             throw new NotImplementedException();
         }
