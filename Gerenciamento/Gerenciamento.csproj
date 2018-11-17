@@ -111,6 +111,7 @@
       <DependentUpon>FormTelaGeral.cs</DependentUpon>
     </Compile>
     <Compile Include="Repository\Conexao.cs" />
+    <Compile Include="Repository\MotoristaRep.cs" />
     <Compile Include="views\ICadastroMotorista.cs" />
     <EmbeddedResource Include="FormBase.resx">
       <DependentUpon>FormBase.cs</DependentUpon>
