@@ -289,12 +289,11 @@
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Habilitado para categoria";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(104, 25);
+            this.checkBox5.Location = new System.Drawing.Point(64, 24);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(33, 17);
             this.checkBox5.TabIndex = 16;
@@ -391,6 +390,7 @@
             this.btGravar.TabIndex = 14;
             this.btGravar.Text = "&Gravar";
             this.btGravar.UseVisualStyleBackColor = false;
+            this.btGravar.Click += new System.EventHandler(this.btGravar_Click);
             // 
             // btCancelar
             // 
