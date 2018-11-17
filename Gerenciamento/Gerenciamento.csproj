@@ -94,13 +94,12 @@
     <Compile Include="frmConsultaEntrega.Designer.cs">
       <DependentUpon>frmConsultaEntrega.cs</DependentUpon>
     </Compile>
-    <Compile Include="models\Caminhao.cs" />
-    <Compile Include="models\CategoriaHabilitacao.cs" />
-    <Compile Include="models\Motorista.cs" />
-    <Compile Include="models\Pessoa.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="model\Classes\Caminhao.cs" />
+    <Compile Include="model\Classes\CategoriaHabilitacao.cs" />
+    <Compile Include="model\Classes\Motorista.cs" />
+    <Compile Include="model\Classes\Pessoa.cs" />
+    <Compile Include="model\Repository\Conexao.cs" />
+    <Compile Include="model\Repository\MotoristaRep.cs" />
     <Compile Include="presenter\PCadastroMorista.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,7 +109,6 @@
     <Compile Include="FormTelaGeral.Designer.cs">
       <DependentUpon>FormTelaGeral.cs</DependentUpon>
     </Compile>
-    <Compile Include="Repository\Conexao.cs" />
     <Compile Include="views\ICadastroMotorista.cs" />
     <EmbeddedResource Include="FormBase.resx">
       <DependentUpon>FormBase.cs</DependentUpon>
@@ -136,12 +134,6 @@
     <EmbeddedResource Include="frmConsultaEntrega.resx">
       <DependentUpon>frmConsultaEntrega.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="obj\Debug\Gerenciamento.FormBase.resources" />
-    <EmbeddedResource Include="obj\Debug\Gerenciamento.FormCadastroCaminhao.resources" />
-    <EmbeddedResource Include="obj\Debug\Gerenciamento.FormCadastroMotorista.resources" />
-    <EmbeddedResource Include="obj\Debug\Gerenciamento.FormControle.resources" />
-    <EmbeddedResource Include="obj\Debug\Gerenciamento.FormTelaGeral.resources" />
-    <EmbeddedResource Include="obj\Debug\Gerenciamento.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -154,14 +146,6 @@
     <EmbeddedResource Include="FormTelaGeral.resx">
       <DependentUpon>FormTelaGeral.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="bin\Debug\Gerenciamento.exe.config" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\Gerenciamento.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\Gerenciamento.csproj.GenerateResource.cache" />
-    <None Include="obj\Debug\Gerenciamento.csprojAssemblyReference.cache" />
-    <None Include="obj\Release\Gerenciamento.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Release\Gerenciamento.csprojAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -175,16 +159,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Release\" />
-    <Folder Include="obj\Debug\TempPE\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\Gerenciamento.exe" />
-    <Content Include="bin\Debug\Gerenciamento.pdb" />
-    <Content Include="obj\Debug\Gerenciamento.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\Gerenciamento.exe" />
-    <Content Include="obj\Debug\Gerenciamento.pdb" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
