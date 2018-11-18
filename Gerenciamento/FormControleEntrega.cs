@@ -94,10 +94,18 @@ namespace Gerenciamento
         private void FormControleEntrega_Load(object sender, EventArgs e)
         {
             var r = new CaminhaoRep();
-
             comboBox1.DisplayMember = "Placa";
             comboBox1.ValueMember = "Id";
             comboBox1.DataSource = r.GetAll("").Tables[0];
+
+            if (Alterar)
+            {
+                IdCaminhao = entrega.IdCaminhao;
+                DataSaida = entrega.DataSaida;
+                DataChegada = entrega.DataChegada;
+                KmFinal = entrega.KmFinal;
+                Observacao = entrega.Observacao;
+            }
         }
 
         public Entrega entrega { get; set; } 
@@ -111,6 +119,8 @@ namespace Gerenciamento
             {
                 Presenter.Salvar();
             }
+            MessageBox.Show("Dados foram salvos com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Close();
         }
         public bool Alterar { get; set; }
 

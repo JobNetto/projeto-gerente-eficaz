@@ -27,8 +27,8 @@ namespace Gerenciamento.model.Repository
                            SET[IdCaminhao] = {Entrega.Id}
                               ,[DataSaida] = '{Entrega.DataSaida.ToString("yyyy-MM-dd")}'
                               ,[DataChegada] = '{Entrega.DataChegada.Value.ToString("yyyy-MM-dd")}'
-                              ,[KmFinal] = {Entrega}
-                              ,[Observacao] = '{Entrega}'
+                              ,[KmFinal] = {Entrega.KmFinal}
+                              ,[Observacao] = '{Entrega.Observacao}'
                          WHERE Id= {Entrega.Id}";
 
                 SqlCommand cd = new SqlCommand
@@ -50,8 +50,8 @@ namespace Gerenciamento.model.Repository
 
         public override DataSet GetAll(object objeto)
         {
-            string sql = "SELECT * FROM Entrega";
-            sql += " WHERE placa LIKE '" + objeto.ToString().Replace("-", "").Replace(" ", "") + "%'";
+            string sql = "SELECT * FROM Entregas";
+            //sql += " WHERE placa LIKE '" + objeto.ToString().Replace("-", "").Replace(" ", "") + "%'";
             SqlDataAdapter da = new SqlDataAdapter(sql, cn);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -76,7 +76,7 @@ namespace Gerenciamento.model.Repository
 			   ,'{Entrega.DataSaida.ToString("yyyy-MM-dd")}'
 			   ,'{Entrega.DataChegada.Value.ToString("yyyy-MM-dd")}'
 			   ,{Entrega.KmFinal}
-			   ,'{Entrega.Observacao}'";
+			   ,'{Entrega.Observacao}')";
 
                 SqlCommand cd = new SqlCommand
                 {

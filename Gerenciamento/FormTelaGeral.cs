@@ -38,8 +38,7 @@ namespace Gerenciamento
 
         private void viajemToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            var frm = new frmConsultaEntrega();
-            frm.ShowDialog();
+          
         }
 
         private void caminhãoToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -56,7 +55,7 @@ namespace Gerenciamento
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var frm = new FormControleEntrega();
+            var frm = new FormListaEntregas();
             frm.ShowDialog();
             frm.Dispose();
         }
