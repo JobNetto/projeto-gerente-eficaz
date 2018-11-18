@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gerenciamento.model.Repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,16 @@ namespace Gerenciamento
         {
             var frm = new frmConsultaEntrega();
             frm.ShowDialog();
+            frm.Dispose();
+        }
+
+        private void FormControleEntrega_Load(object sender, EventArgs e)
+        {
+            var r = new CaminhaoRep();
+
+            comboBox1.DisplayMember = "Placa";
+            comboBox1.ValueMember = "Id";
+            comboBox1.DataSource = r.GetAll("").Tables[0];
         }
     }
 }

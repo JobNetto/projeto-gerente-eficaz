@@ -16,14 +16,23 @@ namespace Gerenciamento
     public partial class FormCadastroCaminhao : FormBase, ICadastroCaminhao
     {
         public PCadastroCaminhao Presenter { get; set; }
+
         public string Marca { get => txtMarca.Text; set => txtMarca.Text = value; }
+
         public string Placa { get => txtPlaca.Text; set => txtPlaca.Text = value; }
+
         public string Codigo { get => txtCodigo.Text; set => txtCodigo.Text = value; }
+
         public string Modelo { get => txtModelo.Text; set => txtModelo.Text = value; }
+
         public DateTime AnoFabricacao { get => dtFabricacao.Value; set => dtFabricacao.Value = value; }
+
         public DateTime AnoModelo { get => dtModelo.Value; set => dtModelo.Value = value; }
+
         public string Chassi { get => txtChassi.Text; set => txtChassi.Text = value; }
+
         public string CodRenavam { get => txtCodRenavam.Text; set => txtCodRenavam.Text = value; }
+
         public CategoriaHabilitacao Categoria
         {
             get
@@ -65,12 +74,13 @@ namespace Gerenciamento
             }
         }
         public string Cor { get => txtCor.Text; set => txtCor.Text = value; }
-        public double Capacidade { get => double.Parse(txtCapacidade.Text); set => txtCapacidade.Text = value.ToString(); }
-        public int Km { get => int.Parse(txtKmInicial.Text); set => value.ToString(); }
+        public decimal Capacidade { get => npCapacidade.Value; set => npCapacidade.Value = value; }
+        public int Km { get { return Convert.ToInt32(npKmRodado.Value); }set { npKmRodado.Value = value; } }
 
         public FormCadastroCaminhao()
         {
             InitializeComponent();
+            Presenter = new PCadastroCaminhao(this);
         }
 
         private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -89,12 +99,14 @@ namespace Gerenciamento
 
         private void salvarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Presenter.Salvar(caminhao.Id);
         }
 
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             caminhao = new Caminhao();
+            caminhao.AnoFabricacao = DateTime.Now;
+            caminhao.AnoModelo = DateTime.Now;
             CarregaComponentes();
         }
 
@@ -109,10 +121,21 @@ namespace Gerenciamento
             txtChassi.Text = caminhao.Chassi;
             txtCodRenavam.Text = caminhao.CodRenavam;
             txtCor.Text = caminhao.CodRenavam;
-            txtCapacidade.Text = caminhao.Capacidade.ToString();
-            txtKmInicial.Text = caminhao.KmRodado.ToString();
+            npCapacidade.Value = caminhao.Capacidade;
+            npKmRodado.Value = caminhao.KmRodado;
         }
 
         private Caminhao caminhao { get; set; }
+
+        private void btGravar_Click(object sender, EventArgs e)
+        {
+            Presenter.Gravar();
+            MessageBox.Show("Dados gravados com Sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

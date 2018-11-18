@@ -41,11 +41,11 @@
             this.txtCor = new System.Windows.Forms.TextBox();
             this.txtPlaca = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.npKmRodado = new System.Windows.Forms.NumericUpDown();
+            this.npCapacidade = new System.Windows.Forms.NumericUpDown();
             this.dtModelo = new System.Windows.Forms.DateTimePicker();
             this.dtFabricacao = new System.Windows.Forms.DateTimePicker();
-            this.txtCapacidade = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtKmInicial = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbDiesel = new System.Windows.Forms.RadioButton();
@@ -68,6 +68,8 @@
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.npKmRodado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npCapacidade)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -161,11 +163,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.npKmRodado);
+            this.groupBox1.Controls.Add(this.npCapacidade);
             this.groupBox1.Controls.Add(this.dtModelo);
             this.groupBox1.Controls.Add(this.dtFabricacao);
-            this.groupBox1.Controls.Add(this.txtCapacidade);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.txtKmInicial);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.groupBox3);
@@ -186,6 +188,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalhes do Veículo";
             // 
+            // npKmRodado
+            // 
+            this.npKmRodado.Location = new System.Drawing.Point(428, 166);
+            this.npKmRodado.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.npKmRodado.Name = "npKmRodado";
+            this.npKmRodado.Size = new System.Drawing.Size(120, 20);
+            this.npKmRodado.TabIndex = 29;
+            // 
+            // npCapacidade
+            // 
+            this.npCapacidade.Location = new System.Drawing.Point(428, 129);
+            this.npCapacidade.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.npCapacidade.Name = "npCapacidade";
+            this.npCapacidade.Size = new System.Drawing.Size(120, 20);
+            this.npCapacidade.TabIndex = 21;
+            // 
             // dtModelo
             // 
             this.dtModelo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -202,14 +228,6 @@
             this.dtFabricacao.Size = new System.Drawing.Size(80, 20);
             this.dtFabricacao.TabIndex = 20;
             // 
-            // txtCapacidade
-            // 
-            this.txtCapacidade.Location = new System.Drawing.Point(428, 129);
-            this.txtCapacidade.Name = "txtCapacidade";
-            this.txtCapacidade.Size = new System.Drawing.Size(145, 20);
-            this.txtCapacidade.TabIndex = 25;
-            this.toolTip1.SetToolTip(this.txtCapacidade, "Capadica total do tanque de comustível");
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -219,13 +237,6 @@
             this.label13.TabIndex = 24;
             this.label13.Text = "Capacidade";
             this.toolTip1.SetToolTip(this.label13, "Capadica total do tanque de comustível");
-            // 
-            // txtKmInicial
-            // 
-            this.txtKmInicial.Location = new System.Drawing.Point(428, 165);
-            this.txtKmInicial.Name = "txtKmInicial";
-            this.txtKmInicial.Size = new System.Drawing.Size(145, 20);
-            this.txtKmInicial.TabIndex = 23;
             // 
             // label11
             // 
@@ -360,6 +371,7 @@
             this.btCancelar.TabIndex = 18;
             this.btCancelar.Text = "&Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // btGravar
             // 
@@ -370,6 +382,7 @@
             this.btGravar.TabIndex = 17;
             this.btGravar.Text = "&Gravar";
             this.btGravar.UseVisualStyleBackColor = false;
+            this.btGravar.Click += new System.EventHandler(this.btGravar_Click);
             // 
             // txtMarca
             // 
@@ -434,6 +447,8 @@
             this.Load += new System.EventHandler(this.FormCadastroCaminhao_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.npKmRodado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npCapacidade)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -467,14 +482,12 @@
         private System.Windows.Forms.CheckBox ckE;
         private System.Windows.Forms.CheckBox ckD;
         private System.Windows.Forms.CheckBox ckABC;
-        private System.Windows.Forms.TextBox txtKmInicial;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rbDiesel;
         private System.Windows.Forms.RadioButton rbGasolina;
         private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.Button btGravar;
-        private System.Windows.Forms.TextBox txtCapacidade;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DateTimePicker dtModelo;
         private System.Windows.Forms.DateTimePicker dtFabricacao;
@@ -484,5 +497,7 @@
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
+        private System.Windows.Forms.NumericUpDown npKmRodado;
+        private System.Windows.Forms.NumericUpDown npCapacidade;
     }
 }

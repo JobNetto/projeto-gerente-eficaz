@@ -248,7 +248,8 @@ namespace Gerenciamento
 
         }
 
-        private Gerenciamento.models.Motorista Motorista { get; set; }
+        private Motorista Motorista { get; set; }
+
         private void btGravar_Click(object sender, EventArgs e)
         {
             Presenter.Gravar();

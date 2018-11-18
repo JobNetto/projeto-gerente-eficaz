@@ -68,6 +68,5 @@ namespace Gerenciamento.presenter
             MessageBox.Show("Dados foram salvos com sucesso!","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
-
     }
 }

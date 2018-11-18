@@ -39,13 +39,9 @@
             this.btCancelar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.btGravar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -145,37 +141,6 @@
             this.textBox1.Size = new System.Drawing.Size(502, 159);
             this.textBox1.TabIndex = 35;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.novoToolStripMenuItem,
-            this.salvarToolStripMenuItem,
-            this.pesquisarToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(634, 24);
-            this.menuStrip1.TabIndex = 35;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // novoToolStripMenuItem
-            // 
-            this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.novoToolStripMenuItem.Text = "Novo";
-            // 
-            // salvarToolStripMenuItem
-            // 
-            this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
-            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.salvarToolStripMenuItem.Text = "Salvar";
-            // 
-            // pesquisarToolStripMenuItem
-            // 
-            this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.pesquisarToolStripMenuItem.Text = "Pesquisar";
-            this.pesquisarToolStripMenuItem.Click += new System.EventHandler(this.pesquisarToolStripMenuItem_Click);
-            // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -184,14 +149,24 @@
             this.dateTimePicker2.Size = new System.Drawing.Size(97, 20);
             this.dateTimePicker2.TabIndex = 36;
             // 
-            // FormControle
+            // btGravar
+            // 
+            this.btGravar.BackColor = System.Drawing.Color.Gray;
+            this.btGravar.Location = new System.Drawing.Point(24, 379);
+            this.btGravar.Name = "btGravar";
+            this.btGravar.Size = new System.Drawing.Size(80, 30);
+            this.btGravar.TabIndex = 37;
+            this.btGravar.Text = "&Gravar";
+            this.btGravar.UseVisualStyleBackColor = false;
+            // 
+            // FormControleEntrega
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(634, 421);
+            this.Controls.Add(this.btGravar);
             this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.textBox11);
@@ -202,13 +177,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormControle";
+            this.Name = "FormControleEntrega";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle de Entregas";
+            this.Load += new System.EventHandler(this.FormControleEntrega_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,10 +200,7 @@
         private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button btGravar;
     }
 }

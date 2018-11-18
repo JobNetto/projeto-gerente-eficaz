@@ -22,7 +22,7 @@ namespace Gerenciamento.views
         CategoriaHabilitacao Categoria { get; set; }
         TipoCombustivel Combustivel { get; set; }
         string Cor { get; set; }
-        double Capacidade { get; set; }
+        decimal Capacidade { get; set; }
         int Km { get; set; }
      }
 }
