@@ -17,7 +17,10 @@ namespace Gerenciamento
 
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var frm = new FormControleEntrega();
 
+            frm.ShowDialog();
+            frm.Dispose();
         }
 
         private void salvarToolStripMenuItem_Click(object sender, EventArgs e)
