@@ -70,6 +70,12 @@
     <Compile Include="FormControleEntrega.Designer.cs">
       <DependentUpon>FormControleEntrega.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListaEntregas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaEntregas.Designer.cs">
+      <DependentUpon>FormListaEntregas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,18 +94,18 @@
     <Compile Include="frmConsultaMotorista.Designer.cs">
       <DependentUpon>frmConsultaMotorista.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsultaEntrega.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmConsultaEntrega.Designer.cs">
-      <DependentUpon>frmConsultaEntrega.cs</DependentUpon>
-    </Compile>
     <Compile Include="model\Classes\Caminhao.cs" />
     <Compile Include="model\Classes\CategoriaHabilitacao.cs" />
+    <Compile Include="model\Classes\Entrega.cs" />
     <Compile Include="model\Classes\Motorista.cs" />
     <Compile Include="model\Classes\Pessoa.cs" />
+    <Compile Include="model\Classes\TipoCombustivel.cs" />
+    <Compile Include="model\Repository\CaminhaoRep.cs" />
     <Compile Include="model\Repository\Conexao.cs" />
+    <Compile Include="model\Repository\EntregaRep.cs" />
     <Compile Include="model\Repository\MotoristaRep.cs" />
+    <Compile Include="presenter\PCadastroCaminhao.cs" />
+    <Compile Include="presenter\PCadastroEntrega.cs" />
     <Compile Include="presenter\PCadastroMorista.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,7 +115,9 @@
     <Compile Include="FormTelaGeral.Designer.cs">
       <DependentUpon>FormTelaGeral.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\ICadastroEntrega.cs" />
     <Compile Include="views\ICadastroMotorista.cs" />
+    <Compile Include="views\ICadastroCaminhao.cs" />
     <EmbeddedResource Include="FormBase.resx">
       <DependentUpon>FormBase.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +130,9 @@
     <EmbeddedResource Include="FormControleEntrega.resx">
       <DependentUpon>FormControleEntrega.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormListaEntregas.resx">
+      <DependentUpon>FormListaEntregas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,9 +141,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaMotorista.resx">
       <DependentUpon>frmConsultaMotorista.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmConsultaEntrega.resx">
-      <DependentUpon>frmConsultaEntrega.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -253,6 +253,7 @@ namespace Gerenciamento
         private void btGravar_Click(object sender, EventArgs e)
         {
             Presenter.Gravar();
+            MessageBox.Show("Gravado Com Sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btCancelar_Click(object sender, EventArgs e)
