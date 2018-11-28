@@ -51,7 +51,7 @@ namespace Gerenciamento.Repository
            ,'{motorista.Telefone1.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ", "")}'
            ,'{motorista.Telefone2.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ", "")}'
            ,'{motorista.RG.Replace("(", "").Replace(")", "").Replace("-", "").Replace("_", "").Replace(".", "").Replace(" ", "")}'
-           ,'{motorista.CPF.Replace("(","").Replace(")","").Replace("-","").Replace("_", "").Replace(".","").Replace(" ", "")}')";
+           ,'{motorista.CPF.Replace("(","").Replace(")","").Replace("-","").Replace("_", "").Replace(".","").Replace(" ", "").Replace(",","")}')";
                 SqlCommand cd = new SqlCommand
                 {
                     Connection = cn,

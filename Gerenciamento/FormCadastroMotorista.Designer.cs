@@ -162,7 +162,7 @@
             // txtRG
             // 
             this.txtRG.Location = new System.Drawing.Point(214, 102);
-            this.txtRG.MaxLength = 14;
+            this.txtRG.MaxLength = 11;
             this.txtRG.Name = "txtRG";
             this.txtRG.Size = new System.Drawing.Size(101, 20);
             this.txtRG.TabIndex = 19;
@@ -318,6 +318,8 @@
             // ckABC
             // 
             this.ckABC.AutoSize = true;
+            this.ckABC.Checked = true;
+            this.ckABC.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ckABC.Location = new System.Drawing.Point(6, 25);
             this.ckABC.Name = "ckABC";
             this.ckABC.Size = new System.Drawing.Size(52, 17);

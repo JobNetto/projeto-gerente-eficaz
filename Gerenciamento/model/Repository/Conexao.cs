@@ -14,10 +14,9 @@ namespace Gerenciamento.Repository
         protected void Conectar()
         {
             string s = "";
-            s = "Server=DESKTOP-ON3EB4R;Database=PROJETO_GERENTE_EFICAZ;UID=job;PWD=1;";
-            var e = @"Data Source=DESKTOP-ON3EB4R;Initial Catalog=PROJETO_GERENTE_EFICAZ; persist security info=True; Integrated Security=SSPI;";
+            s = "Server=DESKTOP-PQSDVH0\\SQLEXPRESS;Database=PROJETO_GERENTE_EFICAZ;UID=sa;PWD=123;";
 
-            cn.ConnectionString = e;
+            cn.ConnectionString = s;
             cn.Open();
         }
 
