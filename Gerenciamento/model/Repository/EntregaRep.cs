@@ -25,8 +25,8 @@ namespace Gerenciamento.model.Repository
 
                 var sql = $@"UPDATE [dbo].[Entregas]
                            SET[IdCaminhao] = {Entrega.Id}
-                              ,[DataSaida] = '{Entrega.DataSaida.ToString("yyyy-MM-dd")}'
-                              ,[DataChegada] = '{Entrega.DataChegada.Value.ToString("yyyy-MM-dd")}'
+                              ,[DataSaida] = '{Entrega.DataSaida.ToString("dd-MM-yyyy")}'
+                              ,[DataChegada] = '{Entrega.DataChegada.Value.ToString("dd-MM-yyyy")}'
                               ,[KmFinal] = {Entrega.KmFinal}
                               ,[Observacao] = '{Entrega.Observacao}'
                          WHERE Id= {Entrega.Id}";
@@ -50,13 +50,24 @@ namespace Gerenciamento.model.Repository
 
         public override DataSet GetAll(object objeto)
         {
+            string[] data = objeto.ToString().Split('.');
             string sql = "SELECT * FROM Entregas";
-            //sql += " WHERE placa LIKE '" + objeto.ToString().Replace("-", "").Replace(" ", "") + "%'";
+            //sql += " WHERE DataSaida BETWEEN '" + data[0] + "' and '" + data[1] + "'";
             SqlDataAdapter da = new SqlDataAdapter(sql, cn);
             DataSet ds = new DataSet();
             da.Fill(ds);
             return ds;
         }
+
+        //public override DataSet GetAll(DateTime Inicial, DateTime Final)
+        //{
+        //    string sql = "SELECT * FROM Entregas";
+        //    sql += " WHERE DataSaida BETWEEN " + @Inicial +" and "+ @Final;
+        //    SqlDataAdapter da = new SqlDataAdapter(sql, cn);
+        //    DataSet ds = new DataSet();
+        //    da.Fill(ds);
+        //    return ds;
+        //}
 
         public override void Inserir(object objeto)
         {
@@ -73,8 +84,8 @@ namespace Gerenciamento.model.Repository
 			   ,[Observacao])
 		 VALUES
 			   ({Entrega.IdCaminhao}
-			   ,'{Entrega.DataSaida.ToString("yyyy-MM-dd")}'
-			   ,'{Entrega.DataChegada.Value.ToString("yyyy-MM-dd")}'
+			   ,'{Entrega.DataSaida.ToString("dd-MM-yyyy")}'
+			   ,'{Entrega.DataChegada.Value.ToString("dd-MM-yyyy")}'
 			   ,{Entrega.KmFinal}
 			   ,'{Entrega.Observacao}')";
 

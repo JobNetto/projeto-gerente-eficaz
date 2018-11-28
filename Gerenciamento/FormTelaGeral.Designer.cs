@@ -82,6 +82,7 @@
             this.relarorioToolStripMenuItem.Name = "relarorioToolStripMenuItem";
             this.relarorioToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.relarorioToolStripMenuItem.Text = "Relarorio";
+            this.relarorioToolStripMenuItem.Click += new System.EventHandler(this.relarorioToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -105,7 +106,6 @@
             this.Name = "FormTelaGeral";
             this.Text = "Gerente Eficaz";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FormTelaGeral_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

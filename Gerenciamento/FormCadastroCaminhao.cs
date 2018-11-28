@@ -89,17 +89,21 @@ namespace Gerenciamento
             frm.ShowDialog();
             this.caminhao = frm.caminhao;
             if (caminhao != null)
+            {
                 CarregaComponentes();
+                salvarToolStripMenuItem.Enabled = true;
+            }
         }
 
         private void FormCadastroCaminhao_Load(object sender, EventArgs e)
         {
-
+            salvarToolStripMenuItem.Enabled = false;
         }
 
         private void salvarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Presenter.Salvar(caminhao.Id);
+            salvarToolStripMenuItem.Enabled = false;
         }
 
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Gerenciamento.views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,9 +76,13 @@ namespace Gerenciamento
             frm.Dispose();
         }
 
-        private void FormTelaGeral_Load(object sender, EventArgs e)
+        private void relarorioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var frm = new FormRelatorio();
+            frm.ShowDialog();
+            frm.Dispose();
         }
+
+
     }
 }
